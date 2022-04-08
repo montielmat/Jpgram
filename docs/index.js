@@ -20,7 +20,7 @@ require("./db");
 //CONIFIG
 app.set('views',path.join(__dirname,'views'))
 app.set('view engine','ejs')
-
+const port = 3100
 //MIDDLEWARES
 app.use(cors())
 app.use(morgan())
@@ -39,7 +39,7 @@ app.use('/',uploadRouter)
 app.use(express.static(path.join(__dirname,'public')))
 
 //STARTING THE SERVER
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT || port,()=>{
     console.log(`Server running 🤖`)
 })
 

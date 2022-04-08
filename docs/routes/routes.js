@@ -17,10 +17,6 @@ const storage = multer.diskStorage({
 
 const router = Router();
 
-// router.get('/', (req, res) => {
-//     res.send('Hello!')
-//   })
-
 router.get('/',async(req,res)=>{
     try {
          const images = await Image.find()
