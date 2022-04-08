@@ -16,7 +16,8 @@
   "version": "1.0.0",
   "main": "docs/index.js",
   "scripts": {
-    "dev": "nodemon docs/index.js"
+    "dev": "nodemon docs/index.js",
+    "start": "docs/index.js"
   },
   "keywords": [],
   "author": "",
